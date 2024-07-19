@@ -1,0 +1,11 @@
+.masters{
+    margin-top: 200px;
+    font-size: 100px;
+    padding: 0 10%;
+}
+
+@media(max-width:1080px){
+    .masters{
+        font-size: 30px;
+    }
+}

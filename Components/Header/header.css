@@ -1,0 +1,111 @@
+/* header.css */
+.head, nav {
+    background: rgb(150, 150, 150); /* Ensure a consistent background color */
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    z-index: 1000;
+    margin: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.head {
+    top: 0;
+    height: 40px; /* Ensure it stays at the top */
+}
+
+.scrolls {
+    background: rgb(150, 150, 150);
+    transition: 0.5s;
+}
+
+nav {
+    z-index: 999; /* Slightly lower than .head */
+    top: 34px; 
+    transition: top 0.3s ease-in-out;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav ul, .head ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li, .head ul li {
+    margin-right: 20px;
+    display: inline;
+    list-style: none;
+}
+
+nav img {
+    visibility: visible;
+}
+
+.hide-head {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sticky-nav {
+    top: 0; /* Nav sticks to the top when head is hidden */
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 1080px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(150, 150, 150);
+        z-index: 1;
+        width: 200px;
+        padding-top: 70px;
+        transition: transform 0.5s;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+
+    nav ul.show-mobile-menu {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 15px;
+    }
+
+    .menu-icon {
+        width: 30px;
+        display: block;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+
+    .logo {
+        width: 240px;
+        padding-left: 5%;
+    }
+}

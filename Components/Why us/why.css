@@ -1,0 +1,30 @@
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto 50px;
+}
+
+.desc ul li{
+    font-size: 22px;
+}
+
+.desc p{
+    width: 100%;
+    line-height: 2;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+}
+
+
+@media(max-width: 1080px){
+    .desc p{
+        font-size: 18px;
+        transition: 0.5s;
+    }
+
+    .desc ul li{
+        font-size: 20px;
+    }
+}

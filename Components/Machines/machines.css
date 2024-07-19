@@ -1,0 +1,93 @@
+.machine-home {
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto 20px;
+  width: 90%; /* Adjust width to be more responsive */
+}
+
+.mach {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mach.left {
+  flex-direction: row;
+}
+
+.mach.right {
+  flex-direction: row-reverse;
+}
+
+.mach{
+  margin: 20px 0;
+}
+
+.mach img {
+  width: 60%; /* Adjust the width as needed */
+  max-width: 1080px; /* Ensure it does not exceed a certain width */
+  height: auto;
+  margin: 0 20px; /* Add margin to separate image from text */
+}
+
+
+.machine-info {
+  flex: 1; /* Fill remaining space */
+}
+
+.mach h3{
+  font-size: 25px;
+}
+
+.inquire{
+  display: flex;
+  margin: 10px;
+  align-items: start;
+}
+
+.inquire button{
+  margin: 0 10px;
+}
+
+.inquire button img{
+  margin: 0;
+  margin-left:5px;
+}
+
+.specification{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.viewbtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.mach img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  .mach {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mach img {
+    width: 100%; /* Make image width 100% */
+    margin: 0; /* Remove margins for better centering */
+    transition: 0.5s;
+  }
+
+  .machine-info {
+    margin-top: 20px; /* Add margin for better spacing */
+  }
+  
+  .specification ul{
+    list-style: none;
+  }
+}

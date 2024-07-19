@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+body{
+    background: rgb(223, 223, 223);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.btn{
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 14px 25px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    background: white;
+    color: #212121;
+}
+
+.btn img{
+    width: 22px;
+    margin-left: 5px;
+}
+
+p{
+    line-height: 2;
+}
+
+.dark-btn{
+    background: rgb(183, 49, 49);
+    color: #fff;
+}
+
+.btn:hover{
+    background: rgb(183, 49, 49);
+    color: #fff;
+}
+
+@media(max-width:1200px){
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .btn{
+        padding: 14px 22px;
+    }
+}
+
+@media(max-width:850px){
+    .container-fluid {
+        transition: 0.5s;
+        height: 500px;
+    }
+
+    .container-fluid img{
+        height: 500px;
+        width: 850px;
+    }
+  
+}

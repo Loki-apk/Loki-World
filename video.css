@@ -1,0 +1,11 @@
+.vedio{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(23, 23, 23, 0.7),rgba(23, 23, 23, 0.7)), url(../../assets/intro.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

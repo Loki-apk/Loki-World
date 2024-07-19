@@ -1,0 +1,69 @@
+.support {
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.support form {
+    width: 100%;
+    max-width: 500px; 
+    background: #f9f9f9;    
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: add some shadow for better visuals */
+    border-radius: 20px; /* Optional: add rounded corners */
+}
+
+.support form input, .support form textarea {
+    display: block;
+    width: 100%;
+    background: rgb(201, 201, 201);
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    border-radius: 4px; /* Optional: add rounded corners */
+}
+
+.support button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; /* Optional: adjust padding for button */
+    color: #fff; /* Example: button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Optional: add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.support button img {
+    margin-left: 10px; /* Space between text and arrow */
+}
+
+.result-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: green; /* or red for error messages */
+  }
+  
+
+@media (max-width: 700px) {
+    .support {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .support form {
+        width: 100%; /* Full width on smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .support form input, .support form textarea {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
